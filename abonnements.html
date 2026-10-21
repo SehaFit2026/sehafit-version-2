@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nos Abonnements</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<header class="bg-white text-center py-4 shadow-sm">
+<img src="image.png.png" class="img-fluid mx-auto d-block" style="width:200px;">
+<h1 class="fw-bold mt-2">Nos Abonnements</h1>
+</header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="container">
+<button class="navbar-toggler mx-auto" type="button" data-bs-toggle="collapse" data-bs-target="#menu"><span class="navbar-toggler-icon"></span></button>
+<div class="collapse navbar-collapse justify-content-center" id="menu">
+<ul class="navbar-nav gap-2 text-center">
+<li class="nav-item"><a class="nav-link text-white-50" href="index.html">Accueil</a></li>
+<li class="nav-item"><a class="nav-link text-white active" href="abonnements.html">Abonnements</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="inscription.html">Inscription</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="experts.html">Nos Experts</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="programmes.html">Programmes</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="espace.html">Mon Espace</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="contact.html">Contact</a></li>
+<li class="nav-item"><a class="nav-link text-white-50" href="paiement.html">Paiement</a></li>
+</ul>
+</div>
+</div>
+</nav>
+<main class="container py-4" style="max-width:800px;">
+<div class="card rounded-4 shadow-sm p-4 text-center mb-4"><h3>Pack 1 Mois - 500 DH</h3><p class="text-success fw-bold">500 DH / mois</p><button class="btn btn-dark rounded-pill" onclick="payer('Pack 1 Mois - 500 DH')">Payer Maintenant</button></div>
+<div class="card rounded-4 shadow-sm p-4 text-center mb-4 border-success border-3"><span class="badge bg-success">Le plus populaire</span><h3>Pack 3 Mois - 1200 DH</h3><p class="text-success fw-bold">1200 DH au lieu de 1500 DH</p><button class="btn btn-success rounded-pill" onclick="payer('Pack 3 Mois - 1200 DH')">Payer Maintenant</button></div>
+<div class="card rounded-4 shadow-sm p-4 text-center"><h3>Pack 6 Mois - 2000 DH</h3><p class="text-success fw-bold">2000 DH au lieu de 3000 DH</p><button class="btn btn-dark rounded-pill" onclick="payer('Pack 6 Mois - 2000 DH')">Payer Maintenant</button></div>
+</main>
+<footer class="bg-dark text-center text-secondary py-4 rounded-top-4 mx-auto" style="max-width:1100px;">
+<p class="text-white fw-bold mb-1">SehaFit.</p>
+<p class="small">Réalisé par Bouifraden Wassima et Ait Naisser Hajar - 2026/2027</p>
+<div class="d-flex gap-2 justify-content-center">
+<a href="https://github.com/" target="_blank" class="btn btn-light rounded-pill fw-bold btn-sm px-3">GitHub ↗</a>
+<span class="btn rounded-pill fw-bold btn-sm px-3" style="background:#B6FF00;">© 2026 Agadir</span>
+</div>
+</footer>
+<script>function payer(p){localStorage.setItem("pack",p);window.location.href="paiement.html";}</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
